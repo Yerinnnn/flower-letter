@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+    <script src="index.js" type="javascripts"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <link rel="shortcut icon" href="./images/동백꽃.png" />
+    <title>꽃편지</title>
+
+</head>
+
+<body>
+        <div class="header">
+            <img id="tulip" src="./images/logo.png" alt="tulip">
+        </div>
+        
+    <div class="create">
+        <div class="create-wrapper">
+            <div class="create-card">
+                    <div class="inputSection"><input class="inputName" type="text" name="addressee_name" placeholder="친구의 이름"><label class="inputLabel">
+                            에게</label></div>
+                    <div class="inputSection">
+                        <label class="inputLabel">안녕, <input class="inputName" type="text" name="addressee_name" placeholder="친구의 이름"></label>
+                    </div>
+                    <div class="chooseSection">
+                        <label class="inputLabel">오늘은</label>
+                        <div class="chooseSection_options">
+                            <div class="chooseBox">날씨가 참 좋다.</div>
+                            <div class="chooseBox">비가 오네.</div>
+                            <div class="chooseBox">정말 신나는 날이야.</div>
+                            <div class="chooseBox">기분이 좋아.</div>
+                            <div class="chooseBox">참 행복하다.</div>
+                            <div class="chooseBox">너가 보고 싶은 날이다.</div>
+                            <div class="chooseBox">아무 것도 하기 싫다.</div>
+                            <div class="chooseBox">햇빛이 따스하다.</div>
+                            <div class="chooseBox">맑고 향기로운 날이다.</div>
+                            <div class="chooseBox">하늘 빛이 좋다.</div>
+                        </div>
+                    </div>
+                    <div class="chooseSection">
+                        <label class="inputLabel">그래서 </label>
+                        <div class="chooseSection_options">
+                            <div class="chooseBox">네 생각이 났어.</div>
+                            <div class="chooseBox">네가 보고 싶어.</div>
+                            <div class="chooseBox">너랑 밥 먹고 싶어.</div>
+                            <div class="chooseBox">너랑 놀고 싶어.</div>
+                            <div class="chooseBox">너랑 달달한 거 먹고 싶어.</div>
+                            <div class="chooseBox">네 생각이 났어.</div>
+                            <div class="chooseBox">네가 보고 싶어.</div>
+                            <div class="chooseBox">너랑 밥 먹고 싶어.</div>
+                            <div class="chooseBox">너랑 놀고 싶어.</div>
+                            <div class="chooseBox">너랑 달달한 거 먹고 싶어.</div>
+                        </div>
+                    </div>
+                    <div class="chooseSection">
+                        <label class="inputLabel">있다가 </label>
+                        <div class="chooseSection_options">
+                            <div class="chooseBox">만날래?</div>
+                            <div class="chooseBox">만나자.</div>
+                            <div class="chooseBox">게임하자.</div>
+                            <div class="chooseBox">저녁 먹자.</div>
+                            <div class="chooseBox">영화 보자.</div>
+                            <div class="chooseBox">놀러 가자.</div>
+                            <div class="chooseBox">카페 가자.</div>
+                            <div class="chooseBox">커피 먹자.</div>
+                            <div class="chooseBox">저녁 먹자.</div>
+                            <div class="chooseBox">산책 하자.</div>
+                        </div>
+                    </div>
+                    <div class="chooseSection">
+                        <div class="chooseSection_options">
+                            <div class="chooseBox">오늘도 좋은 하루 보내.</div>
+                            <div class="chooseBox">오늘 행복한 하루 보내.</div>
+                            <div class="chooseBox">오늘 하루 즐겁게 보내길 바랄게.</div>
+                            <div class="chooseBox">오늘 행복한 일들로 가득하기를 바라.</div>
+                            <div class="chooseBox">오늘 사랑이 가득한 하루가 되기를 바랄게.</div>
+                            <div class="chooseBox">오늘도 사랑스러운 하루 보내.</div>
+                        </div>
+                        <div class="chooseSection">
+                            <div class="chooseSection_flowerOptions">
+                                <div class="flowerOption">
+                                    <div class="flower_name">수선화</div>
+                                    <div class="flower_meaning">사랑에 답하여</div>
+                                </div>
+                                <div class="flowerOption">
+                                    <div class="flower_name">흰 제비꽃</div>
+                                    <div class="flower_meaning">순진무구한 사랑</div>
+                                </div>
+                                <div class="flowerOption">
+                                    <div class="flower_name">데이지</div>
+                                    <div class="flower_meaning">명랑한, 천진난만한</div>
+                                </div>
+                                <div class="flowerOption">
+                                    <div class="flower_name">보라색 튤립</div>
+                                    <div class="flower_meaning">영원한 애정</div>
+                                </div>
+                                <div class="flowerOption">
+                                    <div class="flower_name">수국</div>
+                                    <div class="flower_meaning">진심</div>
+                                </div>
+                                <div class="flowerOption">
+                                    <div class="flower_name">프리지아</div>
+                                    <div class="flower_meaning">청순함, 천진난만</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input"><input class="inputName" type="text" name="sender_name" placeholder="당신의 이름"><label class="inputLabel">가</label></div>
+                
+                <a id="kakao-link-btn" href="javascript:;">
+                    <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+                </a>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+
+</html>
