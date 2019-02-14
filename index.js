@@ -1,3 +1,4 @@
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 
 //<![CDATA[
   // // 사용할 앱의 JavaScript 키를 설정해 주세요.
@@ -9,3 +10,18 @@
     });
   }
 //]]>
+
+
+$(".chooseBox").click(function() {
+	alert("Hello World!");
+});
+
+$(".btu").click(function() {
+	alert("Hello World!");
+});
+
+$(document).ready(function(){
+  $(".btu").click(function() {
+alert("Hello World!");
+  });
+})
